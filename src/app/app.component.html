@@ -1,0 +1,22 @@
+<div>
+  <select class="select2-multiple m-2" ui-jp="select2" ui-options="{theme: 'bootstrap'}" name="layout" [(ngModel)]="layout">
+    <option value="ag-theme-alpine">ag-theme-alpine</option>
+    <option value="ag-theme-alpine-dark">ag-theme-alpine-dark</option>
+    <option value="ag-theme-balham">ag-theme-balham</option>
+    <option value="ag-theme-balham-dark">ag-theme-balham-dark</option>
+    <option value="ag-theme-material">ag-theme-material</option>
+  </select>
+  <button (click)="getSelectedRows()" class="btn-info m-3">Get Selected Rows</button>
+</div>
+<div class="row m-3">
+  <ag-grid-angular
+    #agGrid
+    style="width: 600px; height: 500px;"
+    class="{{layout}}"
+    [rowData]="rowData | async"
+    [columnDefs]="columnDefs"
+    rowSelection="multiple"
+    pagination="true"
+    paginationPageSize="1">
+  </ag-grid-angular>
+</div>
