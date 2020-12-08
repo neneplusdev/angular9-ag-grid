@@ -1,6 +1,10 @@
 # angular9-ag-grid
 This is the project developed in Angular 9 with how to use AG Grid with Angular 9. This project also contains how to get selected single row from AG Grid + how to change theme dynamically + pagination.
 
+# Demo
+
+<img src="src/assets/images/angular9-ag-grid.gif" width="100%" height="100%" />
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server
